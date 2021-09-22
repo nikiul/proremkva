@@ -451,6 +451,11 @@ a {
 .header__socials-icons a:last-child {
   margin-right: 0;
 }
+@media (max-width: 500px) {
+  .header__socials-icons {
+    margin-left: auto;
+  }
+}
 .hero {
   padding-top: 207px;
   padding-bottom: 207px;
