@@ -122,6 +122,11 @@ a {
   background-color: #4990E2;
   border-radius: 2px;
 }
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media (max-width: 768px) {
   .header__nav {
     position: fixed;
