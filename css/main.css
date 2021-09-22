@@ -61,6 +61,7 @@ a {
   padding-top: 11px;
   padding-bottom: 14px;
   background: #FFFFFF;
+  z-index: 2;
 }
 .header__content {
   display: -webkit-box;
@@ -95,6 +96,7 @@ a {
             align-items: center;
     width: 25px;
     height: 20px;
+    cursor: pointer;
   }
 }
 .header__burger-icon {
@@ -103,6 +105,8 @@ a {
   height: 2px;
   background-color: #4990E2;
   border-radius: 2px;
+  -webkit-transition: background-color 0.2s ease-in 0.2s;
+  transition: background-color 0.2s ease-in 0.2s;
 }
 .header__burger-icon::before {
   content: '';
@@ -112,6 +116,10 @@ a {
   top: -9px;
   background-color: #4990E2;
   border-radius: 2px;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
 }
 .header__burger-icon::after {
   content: '';
@@ -121,6 +129,31 @@ a {
   top: 9px;
   background-color: #4990E2;
   border-radius: 2px;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+.header__burger-icon_active {
+  background-color: transparent;
+}
+.header__burger-icon_active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+.header__burger-icon_active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
 }
 .header__nav {
   display: -webkit-box;
@@ -137,6 +170,8 @@ a {
     padding-bottom: 45px;
     padding-left: 10px;
     padding-right: 10px;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -151,7 +186,20 @@ a {
     background: #FFFFFF;
     -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.07);
             box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.07);
+    -webkit-transition: -webkit-transform 0.35s ease-in;
+    transition: -webkit-transform 0.35s ease-in;
+    transition: transform 0.35s ease-in;
+    transition: transform 0.35s ease-in, -webkit-transform 0.35s ease-in;
+    z-index: -1;
   }
+}
+.header__nav_active {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  -webkit-transition: -webkit-transform 0.35s ease-in;
+  transition: -webkit-transform 0.35s ease-in;
+  transition: transform 0.35s ease-in;
+  transition: transform 0.35s ease-in, -webkit-transform 0.35s ease-in;
 }
 .header__list {
   display: -webkit-box;
@@ -279,6 +327,17 @@ a {
             flex-direction: row;
   }
 }
+@media (max-width: 500px) {
+  .header__socials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+}
 .header__socials-tel {
   font-weight: bold;
   margin-right: 10px;
@@ -289,12 +348,20 @@ a {
 }
 @media (max-width: 970px) {
   .header__socials-tel {
+    margin-right: 0;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 768px) {
   .header__socials-tel {
+    margin-right: 10px;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 500px) {
+  .header__socials-tel {
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 }
 .header__socials-icons {
