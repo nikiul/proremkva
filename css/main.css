@@ -453,6 +453,8 @@ a {
 }
 @media (max-width: 500px) {
   .header__socials-icons {
+    position: relative;
+    right: 0px;
     margin-left: auto;
   }
 }
