@@ -274,6 +274,7 @@ a {
   transition: -webkit-transform 0.35s ease-in;
   transition: transform 0.35s ease-in;
   transition: transform 0.35s ease-in, -webkit-transform 0.35s ease-in;
+  overflow-y: auto;
 }
 .header__list {
   display: -webkit-box;
