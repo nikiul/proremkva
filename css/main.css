@@ -458,6 +458,26 @@ a {
     margin-left: auto;
   }
 }
+.header__socials-icons-viber_desctop {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+@media (max-width: 1024px) {
+  .header__socials-icons-viber_desctop {
+    display: none !important;
+  }
+}
+.header__socials-icons-viber_tablet {
+  display: none !important;
+}
+@media (max-width: 1024px) {
+  .header__socials-icons-viber_tablet {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+}
 .hero {
   padding-top: 207px;
   padding-bottom: 207px;
