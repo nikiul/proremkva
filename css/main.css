@@ -238,6 +238,7 @@ a {
     position: fixed;
     left: 0;
     top: 0;
+    bottom: 70px;
     right: 0;
     padding-top: 45px;
     padding-bottom: 45px;
