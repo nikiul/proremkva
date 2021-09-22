@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -37,11 +38,27 @@ a {
     text-decoration: none;
 }
 
+.title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    color: #333333;    
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
 .undertitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
     color: #333333;    
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .btn {
@@ -50,7 +67,7 @@ a {
     border-radius: 5px;    
     font-weight: bold;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 16px;
     text-align: center;
     color: #FFFFFF;
     border: none;

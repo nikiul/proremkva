@@ -8,12 +8,29 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    @media (max-width: 785px) {
+        flex-direction: column;
+    }
 }
 
 .footer__contacts {
     width: 445px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1090px) {
+        width: 350px;
+    }
+
+    @media (max-width: 970px) {
+        width: 300px;
+    }
+
+    @media (max-width: 785px) {
+        margin-bottom: 30px;
+        width: 100%;
+    }
 }
 
 .footer__undertitle {
@@ -26,7 +43,13 @@
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+    
+    @media (max-width: 785px) {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+    }
 }
 
 .footer__list-item {
@@ -37,29 +60,61 @@
     a {
         color: #FFFFFF;  
     }
+
+    @media (max-width: 785px) {
+        font-size: 14px;
+    }
 }
 
 .footer__copyright {
     font-size: 14px;
     line-height: 100%;
     color: #FFFFFF;    
+
+    @media (max-width: 785px) {
+        display: none;
+    }
+}
+
+.footer__copyright_mobile {
+    display: none;
+
+    @media (max-width: 785px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        margin-top: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);        
+    }
 }
 
 .footer__right {
     width: 580px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 940px) {
+        width: 440px;
+    }
+
+    @media (max-width: 785px) {
+        width: 100%;
+    }
 }
-
-.footer__undertitle {
-
-}   
 
 .footer__form {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 }
 
 .footer__input-wrap {
@@ -67,6 +122,10 @@
     width: 47%;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .footer__input-label {
@@ -78,7 +137,6 @@
 }
 
 .footer__input {
-    // background-color: transparent;
     background: #555555;
     padding-bottom: 5px;
     padding-left: 0;
@@ -156,6 +214,26 @@
         line-height: 150%;
         text-align: right;
         color: #FFFFFF;
+
+        @media (max-width: 940px) {
+            bottom: 35px;
+        }
+
+        @media (max-width: 785px) {
+            bottom: 5px;
+        }
+
+        @media (max-width: 575px) {
+            bottom: 35px;
+        }
+
+        @media (max-width: 500px) {
+            bottom: 5px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        width: 95%;
     }
 }
 
@@ -164,6 +242,11 @@
 
     h3 {
         margin-bottom: 9px;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 30px;
+        width: 100%;
     }
 }
 
@@ -176,7 +259,43 @@
     label {
         display: inline-flex;
         align-items: center;
-        cursor: pointer;        
+        cursor: pointer;    
+        
+        @media (max-width: 940px) {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 785px) {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 500px) {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 940px) {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    @media (max-width: 785px) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    @media (max-width: 575px) {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    @media (max-width: 500px) {
+        flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -227,6 +346,14 @@
     line-height: 150%;
     color: #FFFFFF;
 
+    br {
+        display: none;
+
+        @media (max-width: 500px) {
+            display: block;
+        }
+    }
+
     a {
         text-decoration: underline;
         color: #fff;
@@ -238,7 +365,20 @@
 
     label {
         width: 100%;
-        cursor: pointer;        
+        cursor: pointer;       
+        
+        @media (max-width: 500px) {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 
@@ -249,4 +389,10 @@
     align-items: center;
     background: #FFFFFF;
     color: #555555;
+
+    @media (max-width: 500px) {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
