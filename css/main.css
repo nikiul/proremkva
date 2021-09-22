@@ -13,6 +13,9 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+.body__lock {
+  overflow: hidden;
+}
 .container {
   max-width: 1200px;
   padding-left: 10px;
@@ -261,6 +264,7 @@ a {
     transition: transform 0.35s ease-in;
     transition: transform 0.35s ease-in, -webkit-transform 0.35s ease-in;
     z-index: 1;
+    overflow-y: auto;
   }
 }
 .header__mobile-nav_active {
