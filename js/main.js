@@ -47,3 +47,16 @@ headerBtn.addEventListener('click', function(){
     bodyLock.classList.remove('body__lock');
 
 })
+
+
+// карусель
+$('.consist__main').owlCarousel({
+    center: true,
+    items:1,
+    loop:true,
+    nav: true,
+    dots: true,
+    mouseDrag: false,
+    touchDrag: false,
+    margin:30,
+});
