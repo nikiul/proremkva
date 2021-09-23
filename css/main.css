@@ -1038,7 +1038,7 @@ a {
   }
 }
 .consis__item-left {
-  margin-right: 20px;
+  margin-right: 30px;
   width: 390px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1095,7 +1095,8 @@ a {
   }
 }
 .consist__item-img img {
-  width: 700px;
+  border: 1px solid #000;
+  width: 700px !important;
   height: 516px;
 }
 .consist__bottom {
