@@ -1979,10 +1979,6 @@ a {
     display: block;
   }
 }
-.checkbox__text a {
-  text-decoration: underline;
-  color: #fff;
-}
 .footer__privacy {
   width: 47%;
 }
