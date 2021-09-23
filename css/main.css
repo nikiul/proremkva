@@ -1038,6 +1038,7 @@ a {
   }
 }
 .consis__item-left {
+  margin-right: 20px;
   width: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1050,6 +1051,7 @@ a {
 @media (max-width: 1060px) {
   .consis__item-left {
     width: 100%;
+    margin-right: 0;
     margin-bottom: 30px;
   }
 }
