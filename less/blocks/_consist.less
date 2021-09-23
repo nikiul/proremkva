@@ -85,8 +85,8 @@
     // counter-reset: slides-num;
     content:  counter(slides-num) "/" ; 
     position: absolute;
-    bottom: -65px;
-    left: 411px;
+    bottom: -50px;
+    left: 502px;
     background: #4990E2;
     color: #FFFFFF;
     width: 50px;
@@ -105,9 +105,13 @@
     }
 
     @media (max-width: 1200px) {
-        bottom: -65px;
+        bottom: -50px;
         left: 50%;
         transform: translateX(-50%)
+    }
+
+    @media (max-width: 1060px) {
+        bottom: -56px;
     }
 }
 
@@ -126,6 +130,8 @@
             content: counter(slides-num);
             display: inline-block;
             vertical-align: middle;
+            width: 20px;
+            text-align: right;
             font-weight: 500;
             font-size: 18px;
             line-height: 100%;
@@ -145,8 +151,8 @@
 .owl-theme .owl-nav {
     margin: 0;
     position: absolute;
-    bottom: -90px;
-    left: 32.3%;
+    bottom: -75px;
+    left: 40%;
     transform: translate(0, -50%);
     height: 50px;
     width: 110px;
@@ -155,9 +161,13 @@
     justify-content: space-between;
 
     @media (max-width: 1200px) {
-        bottom: -65px;
+        bottom: -50px;
         left: 50%;
         transform: translateX(-50%)        
+    }
+
+    @media (max-width: 1060px) {
+        bottom: -56px;
     }
 }
 

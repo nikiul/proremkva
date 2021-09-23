@@ -942,8 +942,8 @@ a {
 .owl-dots {
   content: counter(slides-num) "/";
   position: absolute;
-  bottom: -65px;
-  left: 411px;
+  bottom: -50px;
+  left: 502px;
   background: #4990E2;
   color: #FFFFFF;
   width: 50px;
@@ -963,10 +963,15 @@ a {
 }
 @media (max-width: 1200px) {
   .owl-dots {
-    bottom: -65px;
+    bottom: -50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+}
+@media (max-width: 1060px) {
+  .owl-dots {
+    bottom: -56px;
   }
 }
 .owl-dot {
@@ -981,6 +986,8 @@ a {
   content: counter(slides-num);
   display: inline-block;
   vertical-align: middle;
+  width: 20px;
+  text-align: right;
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
@@ -997,8 +1004,8 @@ a {
 .owl-theme .owl-nav {
   margin: 0;
   position: absolute;
-  bottom: -90px;
-  left: 32.3%;
+  bottom: -75px;
+  left: 40%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   height: 50px;
@@ -1015,10 +1022,15 @@ a {
 }
 @media (max-width: 1200px) {
   .owl-theme .owl-nav {
-    bottom: -65px;
+    bottom: -50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+}
+@media (max-width: 1060px) {
+  .owl-theme .owl-nav {
+    bottom: -56px;
   }
 }
 .consist__item {
@@ -1964,7 +1976,7 @@ a {
   top: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0);
   transform: translate(-50%, -50%) scale(0);
-  background-image: url(../img/footer/checkbox-icon.png);
+  background-image: url(../img/footer/checkbox-icon.svg);
   background-color: #fff;
   background-size: contain;
   background-repeat: no-repeat;
