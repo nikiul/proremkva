@@ -848,7 +848,7 @@ a {
 }
 .consist {
   padding-top: 80px;
-  padding-bottom: 73px;
+  padding-bottom: 80px;
   background: #F9F9F9;
 }
 .consist__content {
@@ -1154,11 +1154,11 @@ a {
 }
 .cost {
   padding-top: 80px;
-  padding-bottom: 153px;
+  padding-bottom: 8px;
 }
 @media (max-width: 768px) {
   .cost {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -1389,8 +1389,8 @@ a {
   color: #333333;
 }
 .about {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: rgba(249, 249, 249, 0.3);
 }
 .about__content {
@@ -1489,8 +1489,8 @@ a {
   color: #333333;
 }
 .footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: #555555;
 }
 .footer__content {
