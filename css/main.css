@@ -1160,7 +1160,7 @@ a {
 }
 .cost {
   padding-top: 80px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 @media (max-width: 768px) {
   .cost {
@@ -1242,7 +1242,6 @@ a {
 .cost__item {
   position: relative;
   padding-top: 25px;
-  padding-bottom: 25px;
   padding-right: 40px;
   padding-left: 40px;
   width: 50%;
@@ -1345,7 +1344,6 @@ a {
   .cost__item {
     padding-top: 15px;
     padding-right: 15px;
-    padding-bottom: 15px;
   }
 }
 @media (max-width: 710px) {
@@ -1354,7 +1352,6 @@ a {
     width: 100%;
     border-top: none;
     height: auto;
-    margin-bottom: 30px;
   }
 }
 .cost__item_before::after {
