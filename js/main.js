@@ -62,3 +62,20 @@ $('.consist__main').owlCarousel({
     touchDrag: false,
     margin:30,
 });
+
+
+// скролл к якорным ссылкам
+$("a.scroll-to").on("click", function(e){
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 60
+    }, 800);
+});
+// 
+
+
+$("a[href='#top']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});

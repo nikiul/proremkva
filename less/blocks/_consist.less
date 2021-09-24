@@ -39,8 +39,16 @@
 
 .consist__main {
     width: 100%;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
     display: flex;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 90px;
+    }
+
+    @media (max-width: 1060px) {
+        margin-bottom: 80px;
+    }
 }
 
 .consist__main.owl-carousel .owl-nav button.owl-next {
