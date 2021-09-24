@@ -56,6 +56,7 @@ $('.consist__main').owlCarousel({
     loop:true,
     nav: true,
     dots: true,
+    autoHeight:true,
     mouseDrag: false,
     touchDrag: false,
     margin:30,
