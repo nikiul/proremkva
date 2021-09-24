@@ -942,8 +942,8 @@ a {
 .owl-dots {
   content: counter(slides-num) "/";
   position: absolute;
-  bottom: -50px;
-  left: 502px;
+  bottom: -25px;
+  left: 514px;
   background: #4990E2;
   color: #FFFFFF;
   width: 50px;
@@ -963,7 +963,7 @@ a {
 }
 @media (max-width: 1200px) {
   .owl-dots {
-    bottom: -50px;
+    bottom: -70px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -1004,8 +1004,8 @@ a {
 .owl-theme .owl-nav {
   margin: 0;
   position: absolute;
-  bottom: -75px;
-  left: 40%;
+  bottom: -50px;
+  left: 41%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   height: 50px;
@@ -1022,7 +1022,7 @@ a {
 }
 @media (max-width: 1200px) {
   .owl-theme .owl-nav {
-    bottom: -50px;
+    bottom: -70px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);

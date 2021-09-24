@@ -57,6 +57,7 @@ $('.consist__main').owlCarousel({
     nav: true,
     dots: true,
     autoHeight:true,
+    autoHeightClass: 'owl-height',
     mouseDrag: false,
     touchDrag: false,
     margin:30,
