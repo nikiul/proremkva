@@ -1165,6 +1165,10 @@ a {
 @media (max-width: 768px) {
   .cost {
     padding-top: 60px;
+  }
+}
+@media (max-width: 710px) {
+  .cost {
     padding-bottom: 60px;
   }
 }
